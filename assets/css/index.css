@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Inicio do Header */
+
+header {
+    background: linear-gradient(60deg, #050505, #230bbf);
+    box-shadow: 0px 0px 12px black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    position: fixed;
+}
+
+header p {
+    border: 3px solid peru;
+    padding: 10px;
+    background: linear-gradient(60deg, #050505, #230bbf);
+    box-shadow: 0px 0px 12px black;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid peru;
+}
+
+/* Fim do Header */
+
+main {
+    background: linear-gradient(60deg, #050505, #1e0e81, #050505);
+    width: 100vw;
+}
+
+
+#conteiner-geral {
+    margin: 0 20%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Inicio */
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+
+}
+
+.inicio div {
+    font-size: 1.5rem;
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    #dv {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        background: linear-gradient(60deg, #050505, #230bbf);
+        box-shadow: 0px 0px 12px black;
+        border: 2px solid peru;
+        border-radius: 12px;
+    }
+
+    a:hover {
+        padding: 3px;
+        box-shadow: 0px 0px 12px peru;
+    }
+}
+
+.inicio img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px black;
+}
+
+/* Sobre Mim */
+
+#sobreMim {
+    padding: 10vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#sobreMim img {
+    width: 20vw;
+
+}
+
+.conteiner-sobremim {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+        border-radius: 12px;
+        border: 2px solid peru;
+    }
+}
+
+/* fim sobre mim */
+
+#minhas-habilidades {
+    height: 155vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.habil-Conteiner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .habilidade {
+        width: 230px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 12px;
+        gap: 10px;
+
+
+        img {
+            width: 100%;
+            height: 80%;
+            border-radius: 11px;
+            border: 3px solid black;
+            box-shadow: 0px 0px 12px black;
+            background: linear-gradient(90deg, #050505, #230bbf, #050505);
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+    }
+}
+
+#curriculo {
+    width: 90%;
+    background: linear-gradient(60deg, #050505, #230bbf, #050505);
+    padding: 3px;
+    text-align: center;
+    color: peru;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 2px solid peru;
+    border-radius: 12px;
+}
+
+#curriculo:hover {
+    box-shadow: 0px 0px 12px;
+}
+
+/* */
+#projetos {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5%;
+}
+
+.lista-de-projetos {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner-projeto {
+    border: 2px solid black;
+    box-shadow: 0px 0px 12px black;
+    width: 30%;
+    padding: 10px 10px;
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+        width: 100%;
+        height: 70%;
+        border-radius: 12px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            border: 2px solid peru;
+            background: linear-gradient(60deg, #050505, #230bbf);
+            width: 5rem;
+            height: 2rem;
+        }
+
+        a:hover {
+            box-shadow: 0px 0px 12px;
+        }
+    }
+}
+
+/* inicio da section contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 40vh;
+}
+
+.conteiner-contato {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 0px 1.5rem;
+    gap: 2rem;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(60deg, #050505, #230bbf);
+    width: 100px;
+    height: 100px;
+    gap: 1rem;
+    border-radius: 24px;
+    box-shadow: 0px 0px 12px black;
+}
+
+.caixa:hover {
+    border: 2px solid peru;
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    padding: 0px 6%;
+    align-items: center;
+    justify-content: end;
+    background: linear-gradient(60deg, #050505, #230bbf);
+    height: 5vh;
+}
+
+/*  */
+@media (max-width: 1300px) {
+    #conteiner-geral {
+        margin: 0 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+    /* Inicio media do Header */
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        gap: 1rem;
+    }
+
+    /* Fim nmedia do Header */
+
+    /* inicio media projetos */
+
+    #projetos {
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.5%;
+    }
+
+    .lista-de-projetos {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-projeto {
+        border: 2px solid black;
+        box-shadow: 0px 0px 12px black;
+        width: 60%;
+        padding: 10px 10px;
+        border-radius: 24px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+            width: 100%;
+            height: 70%;
+            border-radius: 12px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                border: 2px solid peru;
+                background: linear-gradient(60deg, #050505, #230bbf);
+                width: 5rem;
+                height: 2rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    /* Header media 400px */
+    header {
+        background: linear-gradient(60deg, #050505, #230bbf);
+        box-shadow: 0px 0px 12px black;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header p {
+        display: none;
+    }
+
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav a {
+        color: white;
+    }
+
+    header nav a:hover {
+        border-bottom: 2px solid peru;
+    }
+
+    /* fim header 400px */
+
+    /* Inicio */
+
+    .inicio {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5em 7%;
+    }
+
+    .inicio div {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .inicio img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Sobre Mim 400px*/
+
+    .conteiner-sobremim {
+
+        img {
+            display: none;
+        }
+    }
+
+    /*  */
+
+    #minhas-habilidades {
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .habil-Conteiner {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .habilidade {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 12px;
+            /* gap: 10px; */
+
+            img {
+                width: 100%;
+                height: 75%;
+                border-radius: 11px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    #curriculo {
+        width: 90%;
+        background: linear-gradient(60deg, #050505, #230bbf, #050505);
+        padding: 3px;
+        text-align: center;
+        color: peru;
+        font-weight: bold;
+        font-size: 1.3rem;
+        border: 2px solid peru;
+        border-radius: 12px;
+    }
+
+    #curriculo:hover {
+        box-shadow: 0px 0px 12px;
+    }
+
+    /*  */
+    .conteiner-contato {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 0px 1.5rem;
+        gap: 2rem;
+    }
+
+    .caixa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(60deg, #050505, #230bbf);
+        width: 70px;
+        height: 70px;
+        border-radius: 24px;
+        box-shadow: 0px 0px 12px black;
+    }
+
+    .caixa:hover {
+        border: 2px solid peru;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .paragrafo {
+        display: none;
+    }
+
+    /*  */
+    footer {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
